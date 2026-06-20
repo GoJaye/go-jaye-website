@@ -56,58 +56,36 @@ export default function CompanyHero() {
             overflow: 'hidden',
           }}
         >
-          {/* Copy */}
-          <ScrollReveal animation="rise" style={{ position: 'relative', zIndex: 2, maxWidth: '760px' }}>
-          <div className="company-hero-copy" style={{ padding: 'clamp(40px, 8vw, 93px) clamp(24px, 5vw, 75px)' }}>
-            <h1
-              className="company-hero-title"
-              style={{
-                fontFamily: 'SF Pro Display, system-ui, sans-serif',
-                fontWeight: 800,
-                lineHeight: '100%',
-                letterSpacing: '-2.5%',
-                color: '#0F2A24',
-                width: '700px',
-                maxWidth: '100%',
-                minHeight: '112px',
-                margin: 0,
-              }}
-            >
-              We&apos;re building fair
-              <br className="company-hero-title-br" />
-              mobility on both
-              <br className="company-hero-title-br" />
-              sides.
-            </h1>
+          <ScrollReveal animation="rise" style={{ position: 'relative', zIndex: 2 }}>
+            <div className="company-hero-copy">
+              <h1 className="company-hero-title">
+                <span className="company-hero-title-desktop">
+                  We&apos;re building fair mobility on both sides.
+                </span>
+                <span className="company-hero-title-mobile">
+                  We&apos;re&nbsp;building&nbsp;fair
+                  <br />
+                  mobility&nbsp;on&nbsp;both
+                  <br />
+                  sides.
+                </span>
+              </h1>
 
-            <p
-              className="company-hero-subtext"
-              style={{
-                fontFamily: 'Satoshi Variable, system-ui, sans-serif',
-                fontWeight: 500,
-                fontSize: '20px',
-                lineHeight: '130%',
-                letterSpacing: '-2%',
-                color: 'rgba(15,42,36,0.78)',
-                maxWidth: '495px',
-                margin: '24px 0 0',
-              }}
-            >
-              GoJaye started from a simple frustration: riders overpay, drivers get squeezed, and nobody seems to win. We thought the trip could be fair to everyone in it.
-            </p>
+              <p className="company-hero-subtext">
+                GoJaye started from a simple frustration: riders overpay, drivers get squeezed, and nobody seems to win. We thought the trip could be fair to everyone in it.
+              </p>
 
-            <div className="company-hero-actions" style={{ display: 'flex', gap: '16px', marginTop: '40px', flexWrap: 'wrap' }}>
-              <button style={{ ...buttonBase, width: '187px', padding: '14px 36px 16px', backgroundColor: '#0F2A24', color: '#FFFFFF' }}>
-                Get early access
-              </button>
-              <a href="/waitlist" style={{ ...buttonBase, width: '171px', padding: '14px 16px 16px', gap: '10px', backgroundColor: '#FFFFFF', color: '#0F2A24', textDecoration: 'none' }}>
-                Join the waitlist
-              </a>
+              <div className="company-hero-actions">
+                <button style={{ ...buttonBase, width: '187px', padding: '14px 36px 16px', backgroundColor: '#0F2A24', color: '#FFFFFF' }}>
+                  Get early access
+                </button>
+                <a href="/waitlist" style={{ ...buttonBase, width: '171px', padding: '14px 16px 16px', gap: '10px', backgroundColor: '#FFFFFF', color: '#0F2A24', textDecoration: 'none' }}>
+                  Join the waitlist
+                </a>
+              </div>
             </div>
-          </div>
           </ScrollReveal>
 
-          {/* Car */}
           <div
             className="company-hero-car"
             style={{

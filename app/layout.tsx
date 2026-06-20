@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "GoJaye - Move. Earn. Grow.",
   description: "Jaye is your go-to for stylish and quality rides. Book a ride, rent a car, or hire a driver.",
+  icons: {
+    icon: "/images/jaye-logo.png",
+    apple: "/images/jaye-logo.png",
+  },
 };
 
 export default function RootLayout({
